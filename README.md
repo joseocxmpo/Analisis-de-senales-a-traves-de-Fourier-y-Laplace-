@@ -1,38 +1,34 @@
-## GUI Fourier & Laplace – Instrucciones rápidas
+## Análisis de señales a través de Fourier y Laplace
 
-### Documentar el Punto 4
-1. Ejecuta `python main.py`.
-2. Selecciona **Serie de Fourier** y **Transformada de Laplace** desde el menú izquierdo; en cada caso:
-   - Toma la captura de la ventana (gráfica + texto explicativo).
-   - Inserta la imagen en la sección correspondiente de `Trabajo individual.pdf`.
-   - Redacta un párrafo breve con el resultado (por ejemplo: “La serie usa solo armónicos impares y muestra Gibbs en los saltos”; “F(s) = (2/s²)(1 − e^{-s}), ROC Re(s) > 0”).
-3. En el informe menciona que la implementación se realizó en Python (`main.py`) como evidencia del punto 4.
+Aplicación de escritorio sencilla (Tkinter + Matplotlib) para visualizar:
+- Serie de Fourier de una onda cuadrada.
+- Transformada de Laplace de una función por partes.
 
-### Subir el proyecto a GitHub
-1. Abre una terminal en `C:\Users\joseo\OneDrive\Documents\Mate`.
-2. Inicializa o verifica el repositorio:
-   ```bash
-   git init
-   git status
-   ```
-3. Configura tus datos (solo la primera vez):
-   ```bash
-   git config user.name "Tu Nombre"
-   git config user.email "tu@correo.com"
-   ```
-4. Agrega los archivos relevantes:
-   ```bash
-   git add main.py "Trabajo individual.pdf" README.md
-   ```
-5. Crea el commit:
-   ```bash
-   git commit -m "Implementa GUI Fourier/Laplace y documenta punto 4"
-   ```
-6. Crea un repositorio en GitHub y copia la URL HTTPS, luego:
-   ```bash
-   git remote add origin https://github.com/tuusuario/tu-repo.git
-   git branch -M main
-   git push -u origin main
-   ```
-7. Verifica en GitHub que `main.py`, `Trabajo individual.pdf` y `README.md` estén presentes.
+### Requisitos
+- Python 3.10 o superior.
+- Paquetes: `numpy`, `matplotlib`.
+
+Instala dependencias con:
+```bash
+pip install -r requirements.txt
+```
+(Si no existe `requirements.txt`, puedes instalar directo: `pip install numpy matplotlib`).
+
+### Cómo ejecutar
+```bash
+python main.py
+```
+Se abrirá una ventana con:
+1. Menú lateral para elegir el ejercicio.
+2. Gráfica correspondiente.
+3. Texto explicativo con concepto, resultado e interpretación.
+
+### Uso
+- Selecciona **Serie de Fourier** para ver la aproximación con 25 armónicos impares.
+- Selecciona **Transformada de Laplace** para visualizar la función por partes y su análisis.
+- Cada vista puede capturarse desde la ventana de Matplotlib (`Save Figure`) para documentar el trabajo.
+
+### Personalización
+- Ajusta la cantidad de armónicos (`n_armonicos`) en `generar_serie_fourier`.
+- Modifica la función por partes en `generar_transformada_laplace` para experimentar con otros ejemplos.
 
