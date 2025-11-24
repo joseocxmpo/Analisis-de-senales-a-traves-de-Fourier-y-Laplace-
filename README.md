@@ -4,6 +4,12 @@ Aplicación de escritorio sencilla (Tkinter + Matplotlib) para visualizar:
 - Serie de Fourier de una onda cuadrada.
 - Transformada de Laplace de una función por partes.
 
+### Cómo obtener el proyecto
+```bash
+git clone https://github.com/tuusuario/analisis-senales-fourier-laplace.git
+cd analisis-senales-fourier-laplace
+```
+
 ### Requisitos
 - Python 3.10 o superior.
 - Paquetes: `numpy`, `matplotlib`.
@@ -12,7 +18,7 @@ Instala dependencias con:
 ```bash
 pip install -r requirements.txt
 ```
-(Si no existe `requirements.txt`, puedes instalar directo: `pip install numpy matplotlib`).
+(Si no existe `requirements.txt`, instala directo con `pip install numpy matplotlib`).
 
 ### Cómo ejecutar
 ```bash
