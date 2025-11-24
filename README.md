@@ -6,7 +6,7 @@ Aplicación de escritorio sencilla (Tkinter + Matplotlib) para visualizar:
 
 ### Cómo obtener el proyecto
 ```bash
-git clone https://github.com/tuusuario/analisis-senales-fourier-laplace.git
+git clone https://github.com/joseocxmpo/analisis-senales-fourier-laplace.git
 cd analisis-senales-fourier-laplace
 ```
 
