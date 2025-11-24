@@ -26,9 +26,6 @@ Se abrirá una ventana con:
 ### Uso
 - Selecciona **Serie de Fourier** para ver la aproximación con 25 armónicos impares.
 - Selecciona **Transformada de Laplace** para visualizar la función por partes y su análisis.
-- Cada vista puede capturarse desde la ventana de Matplotlib (`Save Figure`) para documentar el trabajo.
 
-### Personalización
-- Ajusta la cantidad de armónicos (`n_armonicos`) en `generar_serie_fourier`.
-- Modifica la función por partes en `generar_transformada_laplace` para experimentar con otros ejemplos.
+
 
